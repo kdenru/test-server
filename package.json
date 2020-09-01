@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --ext .ts --fix",
-    "development": "nodemon src/server.ts",
+    "dev": "docker-compose up -d && nodemon src/server.ts",
     "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "keywords": [],
